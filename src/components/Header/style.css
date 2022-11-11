@@ -1,0 +1,14 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header .Navigation {
+    font-size: 2.4rem;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
