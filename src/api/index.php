@@ -17,7 +17,7 @@ function resposta($codigo, $ok, $msg) {
 if ($_SERVER['REQUEST_METHOD']=='OPTIONS')
     resposta(200, true, '');
 
-if ($_SERVER['REQUEST_METHOD']!=='POST')
+if ($_SERVER['REQUEST_METHOD']!='POST')
     resposta(400, false, 'Método inválido!');
 
 $conexao = new PDO('mysql:host=localhost;dbname=videos', 'root', '150217');
@@ -26,8 +26,6 @@ $body = json_decode(file_get_contents('php://input'));
 
 if (!$body)
     resposta(400, false, "Corpo da requisição não encontrado!");
-
-// $body = json_decode($body);
 
 $body->nome = filter_var($body->nome, FILTER_UNSAFE_RAW);
 $body->email = filter_var($body->email, FILTER_VALIDATE_EMAIL);
