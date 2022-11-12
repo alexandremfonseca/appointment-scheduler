@@ -1,3 +1,5 @@
+// Cabeçalho do Sistema de Agendamento
+
 import { Link } from "react-router-dom"
 
 import './style.css'
@@ -5,7 +7,7 @@ import './style.css'
 export function Header() {
     return (
         <div className='Header'>
-            <ul className='Navigation'>
+            <ul className='headerNavigation'>
                 <li>
                     <Link to='/' className="Link">Home</Link>
                 </li>

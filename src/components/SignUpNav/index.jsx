@@ -1,3 +1,5 @@
+// Cabeçalho da Página de Cadastros
+
 import { Link } from "react-router-dom"
 
 import './style.css'
@@ -5,7 +7,7 @@ import './style.css'
 export function SignUpNav() {
     return (
         <div className="SignUpNav">
-            <ul className="Navigation">
+            <ul className="signUpNavigation">
                 <li>
                     <Link to='/SignUp/Specialties' className="Link">Especialidades</Link>
                 </li>

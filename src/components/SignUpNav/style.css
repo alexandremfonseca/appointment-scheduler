@@ -1,3 +1,5 @@
+/* Layout e estilização dos componentes do cabeçalho da página de cadastros */
+
 .SignUpNav {
     grid-row: 3 / 4;
 
@@ -6,7 +8,7 @@
     align-items: center;
 }
 
-.SignUpNav .Navigation {
+.signUpNavigation {
     font-size: 2rem;
     font-weight: 600;
     list-style: none;
@@ -18,9 +20,4 @@
     
     border: 1px solid;
     border-radius: 5px;
-}
-
-.Link {
-    text-decoration: none;
-    color: inherit;
 }

@@ -1,9 +1,11 @@
+// Página de Cadastro dos Médicos
+
 import './style.css'
 
 export function Doctors() {
     return (
         <div className="Doctors">
-            <form className="doctorForm" action="" method="POST" enctype="multipart/form-data">
+            <form className="doctorForm">
                 <h1 className="doctorFormTitle">Cadastro de Médicos</h1>
                 <fieldset className="personalInfo">
                     <legend>Informações Pessoais</legend>
@@ -17,7 +19,7 @@ export function Doctors() {
                         Especialidade <input type="text" name="specialty" />
                     </label>
                     <label className="crm">
-                        CRM <input type="text" name="crm" />
+                        CRM <input type="number" name="crm" />
                     </label>
                 </fieldset>
                 <button className="submitDoctor">Enviar</button>

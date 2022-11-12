@@ -1,9 +1,11 @@
+// Sistema de Agendamento
+
 import './style.css'
 
 export function Appointments() {
     return (
         <div className="Appointments">
-            <form className="appointmentForm" action="" method="POST" enctype="multipart/form-data">
+            <form className="appointmentForm">
                 <h1 className="appointmentFormTitle">Agendamento de Consulta</h1>
                 <fieldset className="pacientInfo">
                     <legend>Informações do Paciente</legend>
@@ -22,14 +24,17 @@ export function Appointments() {
                     <label className="doctorSurname">
                         Sobrenome <input type="text" name="doctorSurname" />
                     </label>
+                    <label className="doctorSpecialty">
+                        Especialidade <input type="text" name="doctorSpecialty" />
+                    </label>
                 </fieldset>
                 <fieldset className="appointmentInfo">
                     <legend>Informações de Agendamento</legend>
                     <label className="date">
-                        Data <input type="text" name="date" />
+                        Data <input type="date" name="date" />
                     </label>
                     <label className="time">
-                        Horário <input type="text" name="time" />
+                        Horário <input type="time" name="time" />
                     </label>
                 </fieldset>
                 <button className="submitAppointment">Enviar</button>

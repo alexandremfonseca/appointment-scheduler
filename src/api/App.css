@@ -1,3 +1,5 @@
+/* Layout e estilização do Código-Teste */
+
 * {
     padding: 0;
     margin: 0;
@@ -6,31 +8,35 @@
 }
 
 .App {
+    height: 100vh;
+    background-color: #111;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    background-color: #111;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
     border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
 }
 
 form button {
+    font-weight: bold;
+    cursor: pointer;
+        
     margin-top: 10px;
-    padding: 10px 15px;
     background-color: #5cc;
     border: none;
     border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
+
+    padding: 10px 15px;
 }
 
 input, label, textarea {
@@ -38,11 +44,13 @@ input, label, textarea {
 }
 
 input, textarea {
+    font-size: 15px;
+        
     outline: none;
     border: none;
     border-radius: 20px;
+
     padding: 10px;
-    font-size: 15px;
 }
 
 input:focus, textarea:focus {

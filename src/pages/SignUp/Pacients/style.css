@@ -1,3 +1,5 @@
+/* Layout e estilização da página de cadastro dos pacientes */
+
 .Pacients {
     grid-row: 4 / 5;
     
@@ -18,13 +20,7 @@
     justify-content: space-between;
 }
 
-.pacientFormTitle {
-    font-size: 2.4rem;
-
-    text-align: center;
-}
-
-.personalInfo {
+.Pacients .personalInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -51,33 +47,3 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-
-.submitPacient {
-    font-size: 2rem;
-    font-weight: 600;
-
-    align-self: center;
-    
-    border-radius: 5px;
-    width: 50%;
-    padding: 0.5rem;   
-}
-
-label {
-    display: flex;
-    gap: 0.8rem;
-}
-
-input {
-    flex-grow: 1;
-
-    border-radius: 5px;
-}
-
-legend {
-    font-weight: 600;
-}
- 
-fieldset {
-    padding: 1.5rem;
-} 

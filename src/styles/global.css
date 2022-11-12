@@ -1,3 +1,5 @@
+/* Layout e estilização comum para todo o sistema */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,4 +20,46 @@ html, body, #root {
 #root {
     display: grid;
     grid-template-rows: 7.5% 12.5% 7.5% 1fr;
+}
+
+.Link {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+    display: flex;
+    gap: 0.8rem;
+}
+
+input {
+    flex-grow: 1;
+
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: 600;
+}
+ 
+fieldset {
+    padding: 1.5rem;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    align-self: center;
+    
+    border-radius: 5px;
+    width: 50%;
+    padding: 0.5rem;   
+}
+
+form h1 {
+    font-size: 2.4rem;
+
+    text-align: center;
 }

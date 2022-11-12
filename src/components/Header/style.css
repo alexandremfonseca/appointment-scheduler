@@ -1,10 +1,12 @@
+/* Layout e estilização dos componentes do Header */
+
 .Header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Header .Navigation {
+.headerNavigation {
     font-size: 2.4rem;
     font-weight: 600;
     list-style: none;

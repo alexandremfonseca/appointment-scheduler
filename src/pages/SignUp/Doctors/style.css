@@ -1,3 +1,5 @@
+/* Layout e estilização da página de cadastro dos médicos */
+
 .Doctors {
     grid-row: 4 / 5;
     
@@ -18,13 +20,7 @@
     justify-content: space-between;
 }
 
-.doctorFormTitle {
-    font-size: 2.4rem;
-
-    text-align: center;
-}
-
-.personalInfo {
+.Doctors .personalInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -34,33 +30,3 @@
 .email {
     grid-column: 1 / 3;
 }
-
-.submitDoctor {
-    font-size: 2rem;
-    font-weight: 600;
-
-    align-self: center;
-    
-    border-radius: 5px;
-    width: 50%;
-    padding: 0.5rem;   
-}
-
-label {
-    display: flex;
-    gap: 0.8rem;
-}
-
-input {
-    flex-grow: 1;
-
-    border-radius: 5px;
-}
-
-legend {
-    font-weight: 600;
-}
- 
-fieldset {
-    padding: 1.5rem;
-} 
