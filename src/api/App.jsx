@@ -12,7 +12,7 @@ export function App() {
             msg
         }
 
-        axios.post('http://localhost:3306/rolodex/contacts', contato)
+        axios.post('./contacs.sql', contato)
         .then(response => console.log(response))
         .catch(error => console.error(error))
     }
