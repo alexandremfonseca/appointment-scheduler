@@ -1,19 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import '../src/styles/global.css'
-import { Header } from '../src/components/Header'
-import { Pacients } from '../src/pages/Pacients'
-import { Doctors } from '../src/pages/Doctors'
-import { Specialties } from '../src/pages/Specialties'
-import { SignUpNav } from '../src/components/SignUpNav'
-import { Appointments } from '../src/pages/Appointments'
-import { Home } from '../src/pages/Home'
+// import '../src/styles/global.css'
+// import { Header } from '../src/components/Header'
+// import { Pacients } from '../src/pages/Pacients'
+// import { Doctors } from '../src/pages/Doctors'
+// import { Specialties } from '../src/pages/Specialties'
+// import { SignUpNav } from '../src/components/SignUpNav'
+// import { Appointments } from '../src/pages/Appointments'
+// import { Home } from '../src/pages/Home'
+import { App } from '../src/App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <App />
+        {/* <BrowserRouter>
             <Header />
             <Routes>
                 <Route index element={<Home />} />
@@ -22,6 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route exact path='/SignUp/Pacients' element={<><SignUpNav /> <Pacients /></>} />
                 <Route exact path='/SignUp/Doctors' element={<><SignUpNav /> <Doctors /></>} />
             </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
     </React.StrictMode>
 )
