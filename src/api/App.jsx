@@ -12,7 +12,7 @@ export function App() {
             msg
         }
 
-        axios.post('./contacs.sql', contato)
+        axios.post('./contacts.sql', contato)
         .then(response => console.log(response))
         .catch(error => console.error(error))
     }
