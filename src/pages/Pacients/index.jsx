@@ -10,7 +10,7 @@ export function Pacients() {
                     <label className="pacientName">
                         Nome <input type="text" name="name" />
                     </label>
-                    <label className="surname">
+                    <label className="pacientSurname">
                         Sobrenome <input type="text" name="surname" />
                     </label>
                     <label className="cpf">
