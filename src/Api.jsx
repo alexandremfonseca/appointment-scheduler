@@ -1,5 +1,6 @@
-export default {
-    enviar: async(nome, email, msg) => {
+export function Api() {
+        
+    const enviar = async(nome, email, msg) => {
         let contato = {
             nome,
             email,
@@ -8,13 +9,11 @@ export default {
 
         let requisicao = {
             method: 'POST',
-            headers: {
-                'Content-type': 'application/json'
-            },
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(contato)
         }
 
-        const response = await fetch('http://localhost/libraries/serc/api')
+        const response = await fetch('http://localhost:3306/rolodex/contacts', requisicao)
         const data = await response.json()
 
         return data.msg
