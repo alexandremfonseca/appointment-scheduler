@@ -1,0 +1,83 @@
+.Pacients {
+    grid-row: 4 / 5;
+    
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 1fr 20%;
+}
+
+.pacientForm {  
+    font-size: 2.2rem;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pacientFormTitle {
+    font-size: 2.4rem;
+
+    text-align: center;
+}
+
+.personalInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.email {
+    grid-column: 1 / 3;
+}
+
+.addressInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.address {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.houseNumber {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.submitPacient {
+    font-size: 2rem;
+    font-weight: 600;
+
+    align-self: center;
+    
+    border-radius: 5px;
+    width: 50%;
+    padding: 0.5rem;   
+}
+
+label {
+    display: flex;
+    gap: 0.8rem;
+}
+
+input {
+    flex-grow: 1;
+
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: 600;
+}
+ 
+fieldset {
+    padding: 1.5rem;
+} 
