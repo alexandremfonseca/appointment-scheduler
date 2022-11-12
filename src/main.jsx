@@ -8,16 +8,19 @@ import { Pacients } from '../src/pages/Pacients'
 import { Doctors } from '../src/pages/Doctors'
 import { Specialties } from '../src/pages/Specialties'
 import { SignUpNav } from '../src/components/SignUpNav'
+import { Appointments } from '../src/pages/Appointments'
+import { Home } from '../src/pages/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <BrowserRouter>
             <Header />
-            <SignUpNav />
             <Routes>
-                <Route index element={<Specialties />} />
-                <Route exact path='/Pacients' element={<Pacients />} />
-                <Route exact path='/Doctors' element={<Doctors />} />
+                <Route index element={<Home />} />
+                <Route exact path='Appointments' element={<Appointments />} />
+                <Route exact path='/SignUp/Specialties' element={<><SignUpNav /> <Specialties /></>} />
+                <Route exact path='/SignUp/Pacients' element={<><SignUpNav /> <Pacients /></>} />
+                <Route exact path='/SignUp/Doctors' element={<><SignUpNav /> <Doctors /></>} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

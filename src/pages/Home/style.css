@@ -1,0 +1,29 @@
+.Home {
+    grid-row: 3 / 5;
+    
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 1fr 20%;
+}
+
+.welcomeMessage {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.welcomeMessage p {
+    font-size: 2.4rem;
+
+    text-align: center;
+}
+
+.welcomeMessage h1 {
+    font-size: 4rem;
+
+    text-align: center;
+}

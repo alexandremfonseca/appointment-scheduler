@@ -4,7 +4,7 @@ export function Pacients() {
     return (
         <div className="Pacients">
             <form className="pacientForm" action="" method="POST" enctype="multipart/form-data">
-                <h1 className="pacientFormTitle">Cadastro do Paciente</h1>
+                <h1 className="pacientFormTitle">Cadastro de Pacientes</h1>
                 <fieldset className="personalInfo">
                     <legend>Informações Pessoais</legend>
                     <label className="pacientName">

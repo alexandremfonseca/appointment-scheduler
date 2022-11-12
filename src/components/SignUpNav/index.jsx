@@ -7,13 +7,13 @@ export function SignUpNav() {
         <div className="SignUpNav">
             <ul className="Navigation">
                 <li>
-                    <Link to='/' className="Link">Especialidades</Link>
+                    <Link to='/SignUp/Specialties' className="Link">Especialidades</Link>
                 </li>
                 <li>
-                    <Link to='Doctors' className="Link">Médicos</Link>
+                    <Link to='/SignUp/Doctors' className="Link">Médicos</Link>
                 </li>
                 <li>
-                    <Link to='Pacients' className="Link">Pacientes</Link>
+                    <Link to='/SignUp/Pacients' className="Link">Pacientes</Link>
                 </li>
             </ul>
         </div>

@@ -4,7 +4,7 @@ export function Specialties() {
     return (
         <div className="Specialties">
             <form className="specialtiesForm" action="" method="POST" enctype="multipart/form-data">
-                <h1 className="specialtiesFormTitle">Cadastro da Especialidade</h1>
+                <h1 className="specialtiesFormTitle">Cadastro de Especialidades</h1>
                 <fieldset className="specialties">
                     <legend>Especialidades</legend>
                     <label className="specialty">
